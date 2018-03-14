@@ -16,6 +16,9 @@ public class Player : MonoBehaviour {
 	private bool jumping = false;
 	private bool facingRigth = true;
 
+	//Teste Meu
+	private bool dbJump = false;
+
 	//Unity Objects
 	private SpriteRenderer sprite;
 	private Rigidbody2D rb2d;
@@ -33,7 +36,14 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		grounded = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
+
+		if (Input.GetButton ("Jump") && grounded) {
+
+			jumping = true;
+		}
+
+
 	}
 
     public void Flip()
@@ -50,5 +60,11 @@ public class Player : MonoBehaviour {
         if ((move < 0f && facingRigth) || (move > 0f && !facingRigth)) {
             Flip();
         }
+
+		if (jumping) {
+			rb2d.AddForce (new Vector2 (0f, jumpForce));
+			jumping = false;
+
+		}
     }
 }

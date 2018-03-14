@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 845887372}
   - component: {fileID: 845887371}
   - component: {fileID: 845887370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChaoProvisorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,6 +374,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 70691390548701056, guid: 5068be84239430c4abeecfa01e5835de,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5068be84239430c4abeecfa01e5835de, type: 2}
   m_IsPrefabParent: 0
@@ -386,11 +391,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4247274433823966, guid: 016cf029aad31ae4fb77635fce4fa827, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.48
+      value: 2.29
       objectReference: {fileID: 0}
     - target: {fileID: 4247274433823966, guid: 016cf029aad31ae4fb77635fce4fa827, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.34
+      value: 1.88
       objectReference: {fileID: 0}
     - target: {fileID: 4247274433823966, guid: 016cf029aad31ae4fb77635fce4fa827, type: 2}
       propertyPath: m_LocalPosition.z
@@ -415,11 +420,6 @@ Prefab:
     - target: {fileID: 4247274433823966, guid: 016cf029aad31ae4fb77635fce4fa827, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 50376398330581530, guid: 016cf029aad31ae4fb77635fce4fa827,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 016cf029aad31ae4fb77635fce4fa827, type: 2}
